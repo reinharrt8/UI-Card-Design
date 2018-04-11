@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #F1F1F1; }
+
+@font-face {
+  font-family: gothamLight;
+  src: url(font/gotham-light.ttf); }
+@font-face {
+  font-family: gotham;
+  src: url(font/gotham-medium.ttf); }
+@font-face {
+  font-family: gothamBold;
+  src: url(font/gotham-bold.otf);
+  font-weight: bold; }
+
+.container {
+  width: 450px;
+  height: 540px;
+  margin: 20px auto; }
+
+.card {
+  border-radius: 13px;
+  box-shadow: -10px 10px 1px #CECFD1; }
+
+  .card .blank {
+    background: #FFFFFF;
+    padding: 20px;
+    border-radius: 13px 13px 0 0; }
+
+  .card .head-card {
+    width: 450px;
+    height: 320px;
+    position: relative; }
+
+    .card .head-card .product-img {
+      height: 320px;
+      max-width: 100%; }
+
+    .card .head-card .tag {
+      text-transform: uppercase;
+      font-family: gothamBold;
+      font-size: 16px;
+      color: #434343;
+      padding: 13px 28px 13px 18px;
+      background-color: #FBE55A;
+      border-radius: 0 30px 30px 0;
+      position: absolute;
+      bottom: 250px; }
+
+  .card .detail-card {
+    width: 450px;
+    height: 220px;
+    background: #FFFFFF;
+    border-radius: 0 0 13px 13px; }
+
+    .card .detail-card .product-detail {
+      position: relative; }
+
+      .card .detail-card .product-detail .product-title {
+        font-family: gothamBold;
+        font-size: 19px;
+        color: #434343;
+        padding: 30px;
+        margin-bottom: 20px; }
+
+        .card .detail-card .product-detail .product-title h3 {
+          margin-bottom: 6px; }
+
+      .card .detail-card .product-detail .product-caption {
+        font-family: gothamLight;
+        font-size: 19px;
+        color: #9F9F9F; }
+
+      .card .detail-card .product-detail .product-price {
+        position: absolute;
+        left: 250px;
+        bottom: -70px; }
+
+        .card .detail-card .product-detail .product-price ul {
+          overflow: hidden; }
+
+        .card .detail-card .product-detail .product-price li {
+          list-style: none;
+          float: left; }
+
+        .card .detail-card .product-detail .product-price #check p {
+          padding: 13px 16px 13px 22px;
+          border: 2px solid #E9E9E9;
+          border-radius: 34px 0 0 34px; }
+
+        .card .detail-card .product-detail .product-price .price {
+          font-family: gothamBold;
+          font-size: 20px;
+          color: #6D6D6D;
+          padding: 13px 20px 13px 13px;
+          border: 2px solid #E9E9E9;
+          border-radius: 0 34px 34px 0; }
+
+.container-popover {
+  width: 800px;
+  height: 700px;
+  margin: auto;
+  margin-top: 100px; }
+
+.pop-card {
+  width: 800px;
+  height: 525px;
+  margin: auto;
+  padding: 20px;
+  background: #FFFFFF;
+  border-radius: 13px;
+  position: relative;
+  display: flex;
+  border-radius: 13px;
+  box-shadow: -10px 10px 1px #CECFD1; }
+
+  .pop-card .left-side {
+    flex: 1; }
+
+    .pop-card .left-side .pop-tag {
+      text-transform: uppercase;
+      font-family: gothamBold;
+      font-size: 14px;
+      color: #434343;
+      padding: 10px 25px 10px 15px;
+      background-color: #FBE55A;
+      border-radius: 0 30px 30px 0;
+      position: absolute;
+      top: 50px;
+      left: 0; }
+
+    .pop-card .left-side .pop-img {
+      width: 350px;
+      height: 335px;
+      object-fit: cover;
+      position: relative;
+      top: 120px;
+      left: -20px; }
+
+    .pop-card .left-side .pop-img2 {
+      width: 350px;
+      height: 335px;
+      object-fit: cover;
+      position: relative;
+      top: 120px;
+      left: -20px;
+      display: none; }
+
+    .pop-card .left-side .pop-img3 {
+      width: 350px;
+      height: 335px;
+      object-fit: cover;
+      position: relative;
+      top: 120px;
+      left: -20px;
+      display: none; }
+
+  .pop-card .right-side {
+    flex: 1; }
+
+    .pop-card .right-side .pop-detail {
+      padding: 20px 0; }
+
+      .pop-card .right-side .pop-detail h3 {
+        font-family: gothamBold;
+        font-size: 24px;
+        color: #434343;
+        margin-bottom: 8px; }
+
+      .pop-card .right-side .pop-detail p {
+        font-family: gothamLight;
+        font-size: 18px;
+        color: #9F9F9F;
+        margin-top: 18px; }
+
+    .pop-card .right-side .pop-nav {
+      margin-top: 14px; }
+
+      .pop-card .right-side .pop-nav ul {
+        width: 350px;
+        list-style: none;
+        border-bottom: 1px solid #EDEDED; }
+
+      .pop-card .right-side .pop-nav li {
+        display: inline-block;
+        margin-right: 16px;
+        margin-bottom: 12px; }
+
+      .pop-card .right-side .pop-nav a {
+        text-decoration: none;
+        font-family: gotham;
+        font-size: 15px;
+        color: #434343; }
+
+      .pop-card .right-side .pop-nav .features {
+        color: #D1D1D1; }
+
+    .pop-card .right-side .pop-caption {
+      margin-top: 18px; }
+
+      .pop-card .right-side .pop-caption ul {
+        width: 350px;
+        list-style-image: url(../assets/check.svg);
+        margin-bottom: 8px; }
+
+      .pop-card .right-side .pop-caption li {
+        margin-left: 20px;
+        font-family: gothamLight;
+        font-size: 14px;
+        color: #9F9F9F; }
+
+    .pop-card .right-side .pop-color {
+      width: 350px;
+      border-top: 1px solid #EDEDED;
+      padding: 10px 0;
+      margin-top: 14px; }
+
+      .pop-card .right-side .pop-color p {
+        font-family: gotham;
+        font-size: 15px;
+        color: #434343; }
+
+      .pop-card .right-side .pop-color .ul-color {
+        padding: 10px 0; }
+
+        .pop-card .right-side .pop-color .ul-color li {
+          list-style: none;
+          float: left;
+          margin-right: 16px; }
+
+        .pop-card .right-side .pop-color .ul-color a {
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          border-radius: 100%; }
+
+        .pop-card .right-side .pop-color .ul-color .grey {
+          background: #DADADA; }
+
+        .pop-card .right-side .pop-color .ul-color .black {
+          background: #3C3C3C; }
+
+        .pop-card .right-side .pop-color .ul-color .brown {
+          background: #D8B56A; }
